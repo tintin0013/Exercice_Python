@@ -18,7 +18,6 @@ class CasSpecial:
     def uneMethode(self):
         print("spécial")
 
-
 # Declaration de la fonction factory 'cas_qui_convient'.
 def cas_qui_convient(estNormal=True):
     if estNormal:
