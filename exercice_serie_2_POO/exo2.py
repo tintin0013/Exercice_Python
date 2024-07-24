@@ -1,10 +1,5 @@
 
-###   Définissez ci-dessous une classe Fraction dont les attibuts sont : num et den, des entiers représentants le numérateur et le dénominateur.
-###   Le dénominateur sera nécessairement un entier strictement positif, sans quoi le constructeur de cette classe devra lever une erreur (à l'aide d'un "assert").
-###   Puis créez une méthode spéciale **str (self) qui permettra d'obtenir 'numerateur/denominateur' ou seulement 'numerateur' si le dénominateur vaut 1, en tapant print(F)** où F est une instance de la classe Fraction .
-
-###   Tapez ci-dessous le code permettant de créer les instances F1, F2, F3 et F4 qui représentent les fractions 3/4 , -8/1 , 2/3 et 21/28. Puis faites afficher ces instances à l'aide de la méthode spéciale **str (self)** créée juste avant.
-
+# Exercice 2
 
 class InvalidDenominatorError(Exception):
     pass

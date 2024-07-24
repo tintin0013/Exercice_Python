@@ -1,12 +1,5 @@
 
-###  Dans cet exercice on se propose de réaliser un jeu de bataille simplifié. Ce jeu se jouera à 2 (soi même contre l'ordinateur), et chaque joueur se verra distribuer un paquet de 8 cartes d'un jeu de 52 cartes.
-###  Chaque carte est définie par sa valeur (2 pour un 2, 3 pour un 3, ..., 11 pour un valet, 12 pour une dame ,...) et par son motif ('coeur', 'carreau', 'pique' ou 'trèfle').
-###  Pour chaque "combat", le joueur retournera la première carte de son paquet et la confrontera à la première carte du paquet de l'autre joueur.
-###  C'est le joueur qui retournera la carte qui a la plus grande valeur qui ramassera les 2 cartes et les remettra à la fin de son paquet. 
-###  En cas d'égalité de valeurs, les joueurs remettront cette carte à la fin de leur paquet et passeront à la suivante.
-###  Le gagnant sera le joueur pour lequel il restera le plus de cartes à la fin des 10 combats.
-###  Pour cela on va créer une classe Carte afin de définir les objets cartes, puis une classe Paquet afin de définir un objet paquet de cartes.
-###  Nous pourrons ensuite programmer ce jeu de bataille.
+# Exercice 3
 
 
 class Carte:

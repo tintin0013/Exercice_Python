@@ -1,27 +1,29 @@
 
 
-from CRobot import CRobot
+from CRobotMobile import CRobotMobile
 
 
-robots = [
-    CRobot("Type Roulant", "AP-1V"),
-    CRobot("Type Volant", "AP-1V", CRobot.SUD),
-    CRobot("Type Marchant", "AP-1R",CRobot.EST, "En reparation"),
-    CRobot("type: Flottant", "AP-1F", status = "Hors service")
+robots_mobiles = [
+    CRobotMobile("Type Roulant", "RM-1V"),
+    CRobotMobile("Type Volant", "RM-1V", 10, 20, CRobotMobile.SUD),
+    CRobotMobile("Type Marchant", "RM-1R",8, 7, CRobotMobile.EST, "En reparation"),
+    CRobotMobile("type: Flottant", "RM-1F", 0, 0, status = "Hors service")
 ]
 
 # Instanciation et utilisation des robots
 print()
 print("************** ROBOT AVANT MODIFICATION **************")
-robots[0].afficher()
-robots[0].setOrientation(CRobot.EST)
-robots[0].setEtat("En reparation")
-robots[0].tourner()
+robots_mobiles[0].afficher()
+robots_mobiles[0].setOrientation(CRobotMobile.EST)
+robots_mobiles[0].setEtat("En reparation")
+robots_mobiles[0].avancer(10)
+robots_mobiles[0].tourner("droite")
+robots_mobiles[0].avancer(5)
 print("************** ROBOT APRES MODIFICATION **************")
-robots[0].afficher()
+robots_mobiles[0].afficher()
 print()
 print("************** AUTRES ROBOTS **************")
 
-for robot in robots[1:]:
+for robot in robots_mobiles[1:]:
     robot.afficher()
     print()
